@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Inika';
+    src: url(/main/#source/fonts/Intert.ttf);    
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header{
+    height: 134px;
+    align-items: center;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1222px;
+        height: 50px;
+        padding-top: 42px;
+        h1{
+            width: 79.17px;
+            height: 21.04px;
+            font-family: 'Inika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: black;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            gap: 46px;
+           
+            li{
+                a{
+                    color: black;
+                text-decoration: none;
+                &:hover{
+                    color: #E06733;
+                    cursor: pointer;
+                }
+                }
+                
+            }
+        }
+    }
+}
