@@ -1,12 +1,27 @@
+$backColor1: #14410b;
+$orangeColor: #E06733;
+$greenColor:#499A18;
+
 @font-face {
-    font-family: 'Inika';
-    src: url(/main/#source/fonts/Intert.ttf);    
+    font-family: Inter;
+    src: url(/main/fonts/Intert.ttf);
+}
+@font-face {
+    font-family: Inika;
+    src: url(/main/fonts/Inika-Regular.ttf);
+}
+body{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
 }
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
 }
 header{
+    background: $backColor1;
     height: 134px;
     align-items: center;
     nav{
@@ -49,3 +64,60 @@ header{
         }
     }
 }
+.welcome{
+    background: $backColor1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 532px;
+    justify-content: space-between;
+    padding: 62px 109px 62px 109px;
+    
+        img{
+            width: 448.8px;
+            height: 407.36px;
+        } 
+        div{
+            width: 549px;
+            height: 340px;
+            h2{
+                width: 549px;
+                height: 101px;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 50px;
+                color: #717171;
+                margin: 0 0 42px 0;
+                span{
+                    color: $greenColor;
+                }
+            }
+            p{
+                width: 525.44px;
+                height: 105px;
+                font-size: 20px;
+                line-height: 35px;
+                color: #636060;
+                margin: 0 0 48px 0;
+            }
+            button{
+                width: 158px;
+                height: 44px;
+                border: 2px solid $orangeColor;
+                border-radius: 10px;
+                font-size: 16px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                color: black;
+                transition: 0.2s;
+                
+                &:hover{
+                    transition: 0.2s;
+                    background-color: $orangeColor;
+                }
+            }
+           
+        }
+    }
+    
