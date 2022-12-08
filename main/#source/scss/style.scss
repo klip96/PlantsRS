@@ -54,7 +54,9 @@ header{
                 a{
                     color: black;
                 text-decoration: none;
+                transition: 0.2s;
                 &:hover{
+                    transition: 0.2s;
                     color: #E06733;
                     cursor: pointer;
                 }

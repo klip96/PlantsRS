@@ -63,8 +63,12 @@ header nav ul {
 header nav ul li a {
   color: black;
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 header nav ul li a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #E06733;
   cursor: pointer;
 }
