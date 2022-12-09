@@ -11,6 +11,11 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+body button {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 .wrapper {
   max-width: 1440px;
@@ -18,7 +23,7 @@ body {
 }
 
 header {
-  background: #14410b;
+  background: #EDF2EC;
   height: 134px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -37,6 +42,7 @@ header nav {
   max-width: 1222px;
   height: 50px;
   padding-top: 42px;
+  margin: 0 auto;
 }
 header nav h1 {
   width: 79.17px;
@@ -47,9 +53,14 @@ header nav h1 {
   font-size: 16px;
   line-height: 21px;
   color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header nav h1:hover {
   cursor: pointer;
+  scale: 1.2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header nav ul {
   display: -webkit-box;
@@ -72,9 +83,12 @@ header nav ul li a:hover {
   color: #E06733;
   cursor: pointer;
 }
+header nav ul li a span {
+  color: #E06733;
+}
 
 .welcome {
-  background: #14410b;
+  background: #EDF2EC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,11 +142,98 @@ header nav ul li a:hover {
   font-style: normal;
   font-weight: 400;
   color: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 .welcome div button:hover {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   background-color: #E06733;
+  color: white;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 666px;
+  padding: 93px 109px 94px 109px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about div {
+  max-width: 605px;
+  height: 350px;
+}
+.about div h2 {
+  width: 462px;
+  height: 102px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+.about div h2 span {
+  color: #E06733;
+}
+.about div p {
+  width: 605px;
+  height: 208px;
+  font-size: 20px;
+  margin: 40px 0 0 0;
+}
+
+.service {
+  height: 1300px;
+  padding: 40px 109px 121px 109px;
+  background-color: #EDF2EC;
+}
+.service .service_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1007px;
+  height: 94px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service .service_content h2 {
+  width: 306px;
+  height: 94px;
+  color: #499A18;
+  font-size: 40px;
+  line-height: 52px;
+}
+.service .service_content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 559px;
+  height: 50px;
+}
+.service .service_content div button {
+  width: 161px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  color: #E06733;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.service .service_content div button:hover {
+  background-color: #E06733;
+  color: white;
+}
+.service .service_content div button:first-child {
+  background-color: #E06733;
+  color: white;
 }

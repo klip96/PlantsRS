@@ -1,4 +1,4 @@
-$backColor1: #14410b;
+$backColor1: #EDF2EC;
 $orangeColor: #E06733;
 $greenColor:#499A18;
 
@@ -15,6 +15,10 @@ body{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+    button{
+        cursor: pointer;
+        transition: 0.5s;
+    }
 }
 .wrapper{
     max-width: 1440px;
@@ -31,6 +35,7 @@ header{
         max-width: 1222px;
         height: 50px;
         padding-top: 42px;
+        margin: 0 auto;
         h1{
             width: 79.17px;
             height: 21.04px;
@@ -40,8 +45,11 @@ header{
             font-size: 16px;
             line-height: 21px;
             color: black;
+            transition: 0.3s;
             &:hover{
                 cursor: pointer;
+                scale: 1.2;
+                transition: 0.3s;
             }
         }
         ul{
@@ -59,6 +67,9 @@ header{
                     transition: 0.2s;
                     color: #E06733;
                     cursor: pointer;
+                }
+                span{
+                    color: #E06733; 
                 }
                 }
                 
@@ -112,14 +123,85 @@ header{
                 font-style: normal;
                 font-weight: 400;
                 color: black;
-                transition: 0.2s;
-                
                 &:hover{
-                    transition: 0.2s;
                     background-color: $orangeColor;
+                    color: white;
                 }
             }
            
         }
     }
+.about{
+    display: flex;
+    height: 666px;
+    padding: 93px 109px 94px 109px;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        max-width: 605px;
+        height: 350px;
+        h2{
+            width: 462px;
+            height: 102px;
+            margin: 0;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 52px;
+            color: #499A18;
+            span{
+                color: $orangeColor;
+            }
+        }
+        p{
+            width: 605px;
+            height: 208px;
+            font-size: 20px;
+            margin: 40px 0 0 0;
+        }
+    }
+}  
+.service{
+    height: 1300px;
+    padding: 40px 109px 121px 109px;
+    background-color: $backColor1;
+    .service_content{
+        display: flex;
+        max-width: 1007px;
+        height: 94px;
+        align-items: center;
+        justify-content: space-between;
+        
+        h2{
+            width: 306px;
+            height: 94px;
+            color: $greenColor;
+            font-size: 40px;
+            line-height: 52px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            width: 559px;
+            height: 50px;
+            button{
+                width: 161px;
+                height: 50px;
+                border: 1px solid $orangeColor;
+                border-radius: 5px;
+                color: $orangeColor;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                &:hover{
+                    background-color: $orangeColor;
+                    color: white;
+                }
+                &:first-child{
+                    background-color: $orangeColor;
+                    color: white;
+                }
+            }
+        }
+    }
+}
     
