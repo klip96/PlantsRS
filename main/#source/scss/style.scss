@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 $backColor1: #EDF2EC;
 $orangeColor: #E06733;
 $greenColor:#499A18;
@@ -60,7 +66,7 @@ header{
            
             li{
                 a{
-                    color: black;
+                    color: #010201;
                 text-decoration: none;
                 transition: 0.2s;
                 &:hover{
@@ -202,6 +208,77 @@ header{
                 }
             }
         }
+    }
+}
+.services{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 116px;
+    row-gap: 55px;
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 330px;
+        height: 450px;
+        border: 1px solid #E3E1D5;
+        border-radius: 20px 20px 20px 20px;
+        overflow: hidden;
+        justify-content: center;
+        h3{
+            color: #E06733;
+            margin: 10px 0 10px 0;
+        }
+        p{
+            color: #717171;
+        }
+
+    }
+}
+.prices{
+    margin: 0 auto;
+}
+.accordion{
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0;
+    background-color: $backColor1;
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding: 16px 40px;
+    &:hover{
+       background-color: #D6E7D2;
+    }
+}
+.active{
+    background-color: #D6E7D2;
+    border-radius: 20px 20px 0 0;
+  } 
+.panel{
+    height: 108px;
+    width: 250px;
+    background-color: #D6E7D2;
+    display: none;
+    overflow: hidden;
+    p{
+        width: 169px;
+        height: 30px;
+    }
+    button{
+        width: 86px;
+        height: 25px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #717171;
+
     }
 }
     
