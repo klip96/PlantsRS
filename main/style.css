@@ -232,6 +232,8 @@ header nav ul li a span {
   border: 1px solid #E06733;
   border-radius: 5px;
   color: #E06733;
+  font-family: "Inika";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -279,9 +281,82 @@ header nav ul li a span {
 
 .prices {
   margin: 0 auto;
+  height: 560px;
+  padding: 40px 109px 115px 109px;
+}
+
+.prices_acord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.prices_acord .price_first_part {
+  width: 332px;
+  height: 391px;
+}
+.prices_acord .price_first_part h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+.prices_acord .price_first_part .prce_acord_box {
+  width: 332px;
+  height: 282px;
+  padding: 34px 41px 34px 41px;
+}
+.prices_acord .price_first_part .prce_acord_box div {
+  margin-bottom: 32px;
+}
+.prices_acord .price_second_part h2 {
+  width: 425px;
+  height: 103px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: #000000;
+}
+.prices_acord .price_second_part h2 span {
+  color: #499A18;
+}
+.prices_acord .price_second_part button {
+  width: 162px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  color: #E06733;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+}
+.prices_acord .price_second_part button:hover {
+  background-color: #E06733;
+  color: white;
 }
 
 .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 250px;
   height: 50px;
   border-radius: 20px;
@@ -293,26 +368,71 @@ header nav ul li a span {
   line-height: 20px;
   color: #000000;
   padding: 16px 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 .accordion:hover {
   background-color: #D6E7D2;
+}
+.accordion::after {
+  content: url(/main/img/svg/accordion_btn.svg);
+  height: 16px;
+  width: 16px;
+  color: #010201;
+  border-radius: 8px;
 }
 
 .active {
   background-color: #D6E7D2;
   border-radius: 20px 20px 0 0;
+  -webkit-transition: border-radius 0s;
+  transition: border-radius 0s;
+}
+.active::after {
+  content: url(/main/img/svg/accordion_btn_open.svg);
 }
 
 .panel {
-  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 0;
   width: 250px;
   background-color: #D6E7D2;
-  display: none;
+  padding: 0 40px;
   overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 .panel p {
   width: 169px;
   height: 30px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+  margin-bottom: 8px;
+}
+.panel h3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+.panel h3 span {
+  color: #E06733;
+  font-size: 16px;
+  font-weight: 700;
 }
 .panel button {
   width: 86px;

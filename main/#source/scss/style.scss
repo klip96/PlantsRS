@@ -195,6 +195,8 @@ header{
                 border: 1px solid $orangeColor;
                 border-radius: 5px;
                 color: $orangeColor;
+                font-family: 'Inika';
+                font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 26px;
@@ -237,8 +239,73 @@ header{
 }
 .prices{
     margin: 0 auto;
+    height: 560px;
+    padding: 40px 109px 115px 109px;
 }
+.prices_acord{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .price_first_part{
+        width: 332px;
+        height: 391px;
+        h2{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #000000;
+            margin-bottom: 60px;
+        }
+        .prce_acord_box{
+            width: 332px;
+            height: 282px;
+            padding: 34px 41px 34px 41px;
+            div{
+                
+                margin-bottom: 32px;
+            }
+        }
+    }
+    .price_second_part{
+        h2{
+            width: 425px;
+            height: 103px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: -0.02em;
+            text-align: right;
+            color: #000000;
+            span{
+                color: $greenColor;
+            }
+        }
+        button{
+            width: 162px;
+                height: 50px;
+                border: 1px solid $orangeColor;
+                border-radius: 5px;
+                color: $orangeColor;
+                font-family: 'Inika';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                background-color: #FFFFFF;
+                &:hover{
+                    background-color: $orangeColor;
+                    color: white;
+                }
+        }
+    }
+}
+
 .accordion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 250px;
     height: 50px;
     border-radius: 20px;
@@ -250,23 +317,68 @@ header{
     line-height: 20px;
     color: #000000;
     padding: 16px 40px;
+    
+    transition: 0.3s ;
+    transition-delay: 0.4s ;
     &:hover{
        background-color: #D6E7D2;
     }
+    &::after{
+        
+        content: url(/main/img/svg/accordion_btn.svg);
+        
+        
+        height: 16px;
+        width: 16px;
+        color: #010201;
+        border-radius: 8px;
+        
+        
+        
+    }
 }
+
 .active{
     background-color: #D6E7D2;
     border-radius: 20px 20px 0 0;
+    transition: border-radius 0s;
+    &::after{
+        
+        content: url(/main/img/svg/accordion_btn_open.svg); 
+        
+    }
   } 
 .panel{
-    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 0;
     width: 250px;
     background-color: #D6E7D2;
-    display: none;
+    padding: 0 40px;
+    
     overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    transition: max-height 0.5s ease-out;
     p{
         width: 169px;
         height: 30px;
+        font-size: 10px;
+        line-height: 10px;
+        color: #717171;
+        margin-bottom: 8px;
+    }
+    h3{
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 12px;
+        span{
+            color: $orangeColor;
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
     button{
         width: 86px;
