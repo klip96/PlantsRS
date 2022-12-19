@@ -32,6 +32,7 @@ body{
 }
 header{
     background: $backColor1;
+    
     height: 134px;
     align-items: center;
     nav{
@@ -265,10 +266,14 @@ header{
             div{
                 
                 margin-bottom: 32px;
+                
             }
         }
     }
     .price_second_part{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
         h2{
             width: 425px;
             height: 103px;
@@ -278,6 +283,7 @@ header{
             letter-spacing: -0.02em;
             text-align: right;
             color: #000000;
+            margin-bottom: 38px;
             span{
                 color: $greenColor;
             }
@@ -294,10 +300,15 @@ header{
                 font-size: 20px;
                 line-height: 26px;
                 background-color: #FFFFFF;
+                margin-bottom: 39px;
                 &:hover{
                     background-color: $orangeColor;
                     color: white;
                 }
+        }
+        img{
+            width: 152px;
+            height: 175px;
         }
     }
 }
@@ -390,7 +401,74 @@ header{
         font-size: 14px;
         line-height: 20px;
         color: #717171;
+        margin-bottom: 15px;
+    }
+}
+.contacts{
+    display: flex;
+    align-items: flex-start;
+    height: 550px;
+    background-color: $backColor1;
+    justify-content: center;
+    
+    padding: 60px 109px 0 109px;
+    img{
+        width: 400px;
+        height: 497px;
+    }
+    h2{
+        color: $greenColor;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0 65px 0 112px;
+        
+    }
+    button{
+        width: 450px;
+        height: 50px;
+        background-color: #D6E7D2;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        color: #717171;
+        text-align: left;
+        border: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 5px 35px 5px 20px;
+        margin-top: 88px;
 
     }
 }
+footer{
+    padding: 40px 109px;
+    align-items: center;
+    height: 130px;
     
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1222px;
+        height: 50px;
+        a{
+            width: 182px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 50px;
+            color: #000000;
+            text-decoration: none;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            width: 188px;
+            justify-content: space-between;
+        }
+    }
+}

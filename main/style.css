@@ -316,6 +316,18 @@ header nav ul li a span {
 .prices_acord .price_first_part .prce_acord_box div {
   margin-bottom: 32px;
 }
+.prices_acord .price_second_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
 .prices_acord .price_second_part h2 {
   width: 425px;
   height: 103px;
@@ -325,6 +337,7 @@ header nav ul li a span {
   letter-spacing: -0.02em;
   text-align: right;
   color: #000000;
+  margin-bottom: 38px;
 }
 .prices_acord .price_second_part h2 span {
   color: #499A18;
@@ -341,10 +354,15 @@ header nav ul li a span {
   font-size: 20px;
   line-height: 26px;
   background-color: #FFFFFF;
+  margin-bottom: 39px;
 }
 .prices_acord .price_second_part button:hover {
   background-color: #E06733;
   color: white;
+}
+.prices_acord .price_second_part img {
+  width: 152px;
+  height: 175px;
 }
 
 .accordion {
@@ -444,4 +462,92 @@ header nav ul li a span {
   font-size: 14px;
   line-height: 20px;
   color: #717171;
+  margin-bottom: 15px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 550px;
+  background-color: #EDF2EC;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 109px 0 109px;
+}
+.contacts img {
+  width: 400px;
+  height: 497px;
+}
+.contacts h2 {
+  color: #499A18;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0 65px 0 112px;
+}
+.contacts button {
+  width: 450px;
+  height: 50px;
+  background-color: #D6E7D2;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #717171;
+  text-align: left;
+  border: 0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px 35px 5px 20px;
+  margin-top: 88px;
+}
+
+footer {
+  padding: 40px 109px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130px;
+}
+footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1222px;
+  height: 50px;
+}
+footer section a {
+  width: 182px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  text-decoration: none;
+}
+footer section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 188px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
