@@ -7,11 +7,11 @@
 
 @font-face {
   font-family: Inter;
-  src: url(/main/fonts/Intert.ttf);
+  src: url(fonts/Intert.ttf);
 }
 @font-face {
   font-family: Inika;
-  src: url(/main/fonts/Inika-Regular.ttf);
+  src: url(fonts/Inika-Regular.ttf);
 }
 body {
   font-family: "Inter";
@@ -251,9 +251,9 @@ header nav ul li a span {
   margin-top: 90px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 116px 1fr 116px 1fr;
+  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
   grid-template-columns: repeat(3, 1fr);
-  gap: 116px;
+  gap: 1rem;
   row-gap: 55px;
 }
 .services div {
@@ -262,8 +262,8 @@ header nav ul li a span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 330px;
-  height: 450px;
+  max-width: 330px;
+  max-height: 450px;
   border: 1px solid #E3E1D5;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
@@ -526,7 +526,7 @@ footer section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1222px;
+  max-width: 1222px;
   height: 50px;
 }
 footer section a {
