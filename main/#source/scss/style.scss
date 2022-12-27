@@ -94,15 +94,15 @@ header{
     padding: 62px 109px 62px 109px;
     
         img{
-            width: 448.8px;
-            height: 407.36px;
+            max-width: 100%;
+            height: auto;
         } 
         div{
-            width: 549px;
+            max-width: 549px;
             height: 340px;
             h2{
-                width: 549px;
-                height: 101px;
+                max-width: 549px;
+                height: auto;
                 font-weight: 700;
                 font-size: 45px;
                 line-height: 50px;
@@ -113,7 +113,7 @@ header{
                 }
             }
             p{
-                width: 525.44px;
+                max-width: 525.44px;
                 height: 105px;
                 font-size: 20px;
                 line-height: 35px;
@@ -148,8 +148,8 @@ header{
         max-width: 605px;
         height: 350px;
         h2{
-            width: 462px;
-            height: 102px;
+            max-width: 462px;
+            height: auto;
             margin: 0;
             font-weight: 400;
             font-size: 40px;
@@ -160,11 +160,15 @@ header{
             }
         }
         p{
-            width: 605px;
+            max-width: 605px;
             height: 208px;
             font-size: 20px;
             margin: 40px 0 0 0;
         }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
     }
 }  
 .service{
@@ -245,7 +249,7 @@ header{
 }
 .prices_acord{
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     .price_first_part{
         width: 332px;
@@ -275,7 +279,7 @@ header{
         flex-direction: column;
         align-items: end;
         h2{
-            width: 425px;
+            max-width: 425px;
             height: 103px;
             font-weight: 700;
             font-size: 40px;

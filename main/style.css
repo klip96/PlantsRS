@@ -112,16 +112,16 @@ header nav ul li a span {
   padding: 62px 109px 62px 109px;
 }
 .welcome img {
-  width: 448.8px;
-  height: 407.36px;
+  max-width: 100%;
+  height: auto;
 }
 .welcome div {
-  width: 549px;
+  max-width: 549px;
   height: 340px;
 }
 .welcome div h2 {
-  width: 549px;
-  height: 101px;
+  max-width: 549px;
+  height: auto;
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
@@ -132,7 +132,7 @@ header nav ul li a span {
   color: #499A18;
 }
 .welcome div p {
-  width: 525.44px;
+  max-width: 525.44px;
   height: 105px;
   font-size: 20px;
   line-height: 35px;
@@ -173,8 +173,8 @@ header nav ul li a span {
   height: 350px;
 }
 .about div h2 {
-  width: 462px;
-  height: 102px;
+  max-width: 462px;
+  height: auto;
   margin: 0;
   font-weight: 400;
   font-size: 40px;
@@ -185,10 +185,14 @@ header nav ul li a span {
   color: #E06733;
 }
 .about div p {
-  width: 605px;
+  max-width: 605px;
   height: 208px;
   font-size: 20px;
   margin: 40px 0 0 0;
+}
+.about img {
+  max-width: 100%;
+  height: auto;
 }
 
 .service {
@@ -289,8 +293,6 @@ header nav ul li a span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -329,7 +331,7 @@ header nav ul li a span {
           align-items: end;
 }
 .prices_acord .price_second_part h2 {
-  width: 425px;
+  max-width: 425px;
   height: 103px;
   font-weight: 700;
   font-size: 40px;
