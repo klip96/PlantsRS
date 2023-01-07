@@ -31,6 +31,7 @@ body button {
 
 header {
   background: #EDF2EC;
+  padding-top: 36px;
   height: 134px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -48,7 +49,6 @@ header nav {
           justify-content: space-between;
   max-width: 1222px;
   height: 50px;
-  padding-top: 42px;
   margin: 0 auto;
 }
 header nav h1 {
@@ -76,7 +76,8 @@ header nav ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
-  gap: 46px;
+  gap: 44px;
+  padding-top: 10px;
 }
 header nav ul li a {
   color: #010201;
@@ -127,6 +128,7 @@ header nav ul li a span {
   line-height: 50px;
   color: #717171;
   margin: 0 0 42px 0;
+  word-spacing: 3px;
 }
 .welcome div h2 span {
   color: #499A18;
@@ -135,7 +137,7 @@ header nav ul li a span {
   max-width: 525.44px;
   height: 105px;
   font-size: 20px;
-  line-height: 35px;
+  line-height: 37px;
   color: #636060;
   margin: 0 0 48px 0;
 }
@@ -180,6 +182,8 @@ header nav ul li a span {
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
+  word-spacing: 3px;
+  letter-spacing: -1px;
 }
 .about div h2 span {
   color: #E06733;
@@ -188,7 +192,8 @@ header nav ul li a span {
   max-width: 605px;
   height: 208px;
   font-size: 20px;
-  margin: 40px 0 0 0;
+  margin: 43px 0 0 0;
+  line-height: 30px;
 }
 .about img {
   max-width: 100%;
@@ -219,6 +224,7 @@ header nav ul li a span {
   color: #499A18;
   font-size: 40px;
   line-height: 52px;
+  word-spacing: -5px;
 }
 .service .service_content div {
   display: -webkit-box;
@@ -229,6 +235,7 @@ header nav ul li a span {
           justify-content: space-between;
   width: 559px;
   height: 50px;
+  padding-top: 7px;
 }
 .service .service_content div button {
   width: 161px;
@@ -255,10 +262,10 @@ header nav ul li a span {
   margin-top: 90px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
+  -ms-grid-columns: 1fr 7rem 1fr 7rem 1fr;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  row-gap: 55px;
+  gap: 7rem;
+  row-gap: 88px;
 }
 .services div {
   display: -webkit-box;
@@ -331,15 +338,15 @@ header nav ul li a span {
           align-items: end;
 }
 .prices_acord .price_second_part h2 {
-  max-width: 425px;
+  max-width: 545px;
   height: 103px;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  letter-spacing: -0.02em;
   text-align: right;
   color: #000000;
   margin-bottom: 38px;
+  word-spacing: 3px;
 }
 .prices_acord .price_second_part h2 span {
   color: #499A18;
@@ -483,7 +490,7 @@ header nav ul li a span {
 }
 .contacts img {
   width: 400px;
-  height: 497px;
+  height: 488px;
 }
 .contacts h2 {
   color: #499A18;
@@ -531,6 +538,9 @@ footer section {
   max-width: 1222px;
   height: 50px;
 }
+footer section .git_footer {
+  word-spacing: 15px;
+}
 footer section a {
   width: 182px;
   font-family: "Inter";
@@ -545,11 +555,7 @@ footer section div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 10px;
   width: 188px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 18px;
 }
