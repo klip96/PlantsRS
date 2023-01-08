@@ -408,7 +408,7 @@ header nav ul li a span {
   background-color: #D6E7D2;
 }
 .accordion::after {
-  content: url(/main/img/svg/accordion_btn.svg);
+  content: url(img/svg/accordion_btn.svg);
   height: 16px;
   width: 16px;
   color: #010201;
