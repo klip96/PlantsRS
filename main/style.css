@@ -13,6 +13,10 @@
   font-family: Inika;
   src: url(fonts/Inika-Regular.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter";
   font-style: normal;
@@ -519,29 +523,41 @@ header nav ul li a span {
 }
 
 footer {
-  padding: 40px 109px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 130px;
-}
-footer section {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   max-width: 1222px;
-  height: 50px;
+  margin: 0 auto;
 }
-footer section .git_footer {
+footer .git_footer {
   word-spacing: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-footer section a {
+footer .git_footer:hover {
+  scale: 1.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer p {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer p:hover {
+  scale: 1.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer a {
   width: 182px;
   font-family: "Inter";
   font-style: normal;
@@ -551,11 +567,21 @@ footer section a {
   color: #000000;
   text-decoration: none;
 }
-footer section div {
+footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
   width: 188px;
   gap: 18px;
+  list-style-type: none;
+}
+footer ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer ul li:hover {
+  scale: 1.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
