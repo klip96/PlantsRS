@@ -40,6 +40,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+  box-shadow: 0 0 0 100vmax #edf2ec;
+  clip-path: inset(0 -100vmax);
 }
 header nav {
   display: -webkit-box;
@@ -115,6 +118,9 @@ header nav ul li a span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 62px 109px 62px 109px;
+
+  box-shadow: 0 0 0 100vmax #edf2ec;
+  clip-path: inset(0 -100vmax);
 }
 .welcome img {
   max-width: 100%;
@@ -208,6 +214,10 @@ header nav ul li a span {
   height: 1300px;
   padding: 40px 109px 121px 109px;
   background-color: #EDF2EC;
+
+
+  box-shadow: 0 0 0 100vmax #edf2ec;
+  clip-path: inset(0 -100vmax);
 }
 .service .service_content {
   display: -webkit-box;
@@ -337,9 +347,9 @@ header nav ul li a span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  /* -webkit-box-align: end;
+      -ms-flex-align: end; */
+          align-items: flex-end;
 }
 .prices_acord .price_second_part h2 {
   max-width: 545px;
@@ -491,6 +501,10 @@ header nav ul li a span {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 60px 109px 0 109px;
+
+  
+  box-shadow: 0 0 0 100vmax #edf2ec;
+  clip-path: inset(0 -100vmax);
 }
 .contacts img {
   width: 400px;
