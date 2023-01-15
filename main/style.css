@@ -116,7 +116,7 @@ header nav ul li a span {
           justify-content: space-between;
   padding: 62px 109px 62px 109px;
 }
-@media screen {
+@media screen and (max-width: 768px) {
   .welcome {
     height: 420px;
     padding: 40px 50px 70px 50px;
@@ -260,6 +260,11 @@ header nav ul li a span {
   margin: 43px 0 0 0;
   line-height: 30px;
 }
+@media screen and (max-width: 768px) {
+  .about div p {
+    max-width: 668px;
+  }
+}
 .about img {
   max-width: 100%;
   height: auto;
@@ -276,6 +281,12 @@ header nav ul li a span {
   padding: 40px 109px 121px 109px;
   background-color: #EDF2EC;
 }
+@media screen and (max-width: 768px) {
+  .service {
+    height: 1780px;
+    padding: 40px 50px 70px 50px;
+  }
+}
 .service .service_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +300,19 @@ header nav ul li a span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .service .service_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 559px;
+    height: auto;
+  }
+}
 .service .service_content h2 {
   width: 306px;
   height: 94px;
@@ -296,6 +320,13 @@ header nav ul li a span {
   font-size: 40px;
   line-height: 52px;
   word-spacing: -5px;
+}
+@media screen and (max-width: 768px) {
+  .service .service_content h2 {
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
 }
 .service .service_content div {
   display: -webkit-box;
@@ -338,6 +369,13 @@ header nav ul li a span {
   gap: 7rem;
   row-gap: 88px;
 }
+@media screen and (max-width: 768px) {
+  .services {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 38px;
+  }
+}
 .services div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +391,12 @@ header nav ul li a span {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen {
+  .services div {
+    max-width: 281px;
+    max-height: 450px;
+  }
+}
 .services div h3 {
   color: #E06733;
   margin: 10px 0 10px 0;
@@ -360,11 +404,21 @@ header nav ul li a span {
 .services div p {
   color: #717171;
 }
+@media screen and (max-width: 768px) {
+  .services div p {
+    text-align: center;
+  }
+}
 
 .prices {
   margin: 0 auto;
   height: 560px;
   padding: 40px 109px 115px 109px;
+}
+@media screen and (max-width: 768px) {
+  .prices {
+    height: 585px;
+  }
 }
 
 .prices_acord {
@@ -387,6 +441,12 @@ header nav ul li a span {
   line-height: 48px;
   color: #000000;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .prices_acord .price_first_part h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 .prices_acord .price_first_part .prce_acord_box {
   width: 332px;
@@ -421,6 +481,12 @@ header nav ul li a span {
 }
 .prices_acord .price_second_part h2 span {
   color: #499A18;
+}
+@media screen and (max-width: 768px) {
+  .prices_acord .price_second_part h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 .prices_acord .price_second_part button {
   width: 162px;
@@ -559,9 +625,26 @@ header nav ul li a span {
           justify-content: center;
   padding: 60px 109px 0 109px;
 }
+@media screen and (max-width: 768px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .contacts img {
   width: 400px;
   height: 488px;
+}
+@media screen and (max-width: 768px) {
+  .contacts img {
+    width: 200px;
+    height: auto;
+  }
 }
 .contacts h2 {
   color: #499A18;
@@ -604,6 +687,15 @@ footer {
   align-items: center;
   max-width: 1222px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: 181px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 footer .git_footer {
   word-spacing: 15px;

@@ -94,7 +94,7 @@ header{
     height: 532px; 
     justify-content: space-between;
     padding: 62px 109px 62px 109px;
-    @media screen {
+    @media screen and (max-width: 768px){
         height: 420px;
         padding: 40px 50px 70px 50px;
         flex-direction: row-reverse;
@@ -180,7 +180,6 @@ header{
     div{
         max-width: 605px;
         height: 350px;
-        
         h2{
             max-width: 462px;
             height: auto;
@@ -209,11 +208,17 @@ header{
             font-size: 20px;
             margin: 43px 0 0 0;
             line-height: 30px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 668px;
+                // word-spacing: 1px;
+            }
         }
     }
     img{
         max-width: 100%;
         height: auto;
+
         @media screen and (max-width: 768px) {
             max-width: 250px;
             height: auto;
@@ -224,13 +229,25 @@ header{
     height: 1300px;
     padding: 40px 109px 121px 109px;
     background-color: $backColor1;
+
+    @media screen and (max-width: 768px) {
+        height: 1780px;
+        padding: 40px 50px 70px 50px;
+
+    }
     .service_content{
         display: flex;
         max-width: 1007px;
         height: 94px;
         align-items: center;
         justify-content: space-between;
-        
+
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 559px;
+            height: auto;
+        }
         h2{
             width: 306px;
             height: 94px;
@@ -238,6 +255,12 @@ header{
             font-size: 40px;
             line-height: 52px;
             word-spacing: -5px;
+
+            @media screen and (max-width: 768px){
+            font-size: 35px;
+            line-height: 46px;
+            margin-bottom: 40px;
+            }
         }
         div{
             display: flex;
@@ -274,6 +297,11 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 7rem;
     row-gap: 88px;
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 38px;
+        
+    }
     div{
         display: flex;
         flex-wrap: wrap;
@@ -283,12 +311,19 @@ header{
         border-radius: 20px 20px 20px 20px;
         overflow: hidden;
         justify-content: center;
+        @media screen {
+            max-width: 281px;
+            max-height: 450px;
+        }
         h3{
             color: #E06733;
             margin: 10px 0 10px 0;
         }
         p{
             color: #717171;
+            @media screen and (max-width: 768px){
+                text-align: center;
+            }
         }
 
     }
@@ -297,6 +332,10 @@ header{
     margin: 0 auto;
     height: 560px;
     padding: 40px 109px 115px 109px;
+    @media screen and (max-width: 768px){
+        height: 585px;
+
+    }
 }
 .prices_acord{
     display: flex;
@@ -313,6 +352,11 @@ header{
             line-height: 48px;
             color: #000000;
             margin-bottom: 60px;
+            @media screen and (max-width: 768px){
+                font-size: 35px;
+                line-height: 42px;
+                
+            }
         }
         .prce_acord_box{
             width: 332px;
@@ -342,6 +386,11 @@ header{
             word-spacing: 3px;
             span{
                 color: $greenColor;
+            }
+            @media screen and (max-width: 768px){
+                font-size: 25px;
+                line-height: 35px;
+                
             }
         }
         button{
@@ -468,9 +517,17 @@ header{
     justify-content: center;
     
     padding: 60px 109px 0 109px;
+    @media screen and (max-width: 768px){
+        flex-direction:column-reverse;
+        align-items: center;
+    }
     img{
         width: 400px;
         height: 488px;
+        @media screen and (max-width: 768px){
+            width: 200px;
+            height: auto;
+        }
     }
     h2{
         color: $greenColor;
@@ -509,6 +566,10 @@ footer{
         align-items: center;
         max-width: 1222px;
         margin: 0 auto;
+        @media screen and (max-width: 768px){
+            height: 181px;
+            flex-direction: column;
+        }
         .git_footer{
             word-spacing: 15px;
             transition: 0.3s;
