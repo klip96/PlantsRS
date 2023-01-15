@@ -91,17 +91,29 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 532px;
+    height: 532px; 
     justify-content: space-between;
     padding: 62px 109px 62px 109px;
-    
+    @media screen {
+        height: 420px;
+        padding: 40px 50px 70px 50px;
+        flex-direction: row-reverse;
+    }
         img{
             max-width: 100%;
             height: auto;
+            @media screen and (max-width: 768px){
+                height: 280px;
+                width: 254px;
+            }
         } 
         div{
             max-width: 549px;
             height: 340px;
+            @media screen and (max-width: 768px) {
+                max-width: 346px;
+                height: 310px
+            }
             h2{
                 max-width: 549px;
                 height: auto;
@@ -114,6 +126,12 @@ header{
                 span{
                     color: $greenColor;
                 }
+                @media screen and (max-width: 768px) {
+                    font-size: 35px;
+                    line-height: 50px;
+                    max-width: 341px;
+                    margin: 0 0 30px 0;
+                }
             }
             p{
                 max-width: 525.44px;
@@ -122,6 +140,12 @@ header{
                 line-height: 37px;
                 color: #636060;
                 margin: 0 0 48px 0;
+                @media screen and (max-width: 768px) {
+                    max-width: 341px;
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin: 0 0 30px 0;
+                }
             }
             button{
                 width: 158px;
@@ -147,9 +171,16 @@ header{
     padding: 93px 109px 94px 109px;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        height: 783px;   
+        flex-direction: column;
+        padding: 70px 50px  95px 50px;
+        justify-content: center;
+    }
     div{
         max-width: 605px;
         height: 350px;
+        
         h2{
             max-width: 462px;
             height: auto;
@@ -163,6 +194,14 @@ header{
             span{
                 color: $orangeColor;
             }
+            @media screen and (max-width: 768px) {
+                max-width: 423px;
+                height: 102px;
+                font-size: 35px;
+                line-height: 46px;
+                text-align: center;
+                margin: 0 auto;
+            }
         }
         p{
             max-width: 605px;
@@ -175,6 +214,10 @@ header{
     img{
         max-width: 100%;
         height: auto;
+        @media screen and (max-width: 768px) {
+            max-width: 250px;
+            height: auto;
+        }
     }
 }  
 .service{

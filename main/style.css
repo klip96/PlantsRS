@@ -40,9 +40,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
-  box-shadow: 0 0 0 100vmax #edf2ec;
-  clip-path: inset(0 -100vmax);
 }
 header nav {
   display: -webkit-box;
@@ -118,17 +115,36 @@ header nav ul li a span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 62px 109px 62px 109px;
-
-  box-shadow: 0 0 0 100vmax #edf2ec;
-  clip-path: inset(0 -100vmax);
+}
+@media screen {
+  .welcome {
+    height: 420px;
+    padding: 40px 50px 70px 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 .welcome img {
   max-width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .welcome img {
+    height: 280px;
+    width: 254px;
+  }
+}
 .welcome div {
   max-width: 549px;
   height: 340px;
+}
+@media screen and (max-width: 768px) {
+  .welcome div {
+    max-width: 346px;
+    height: 310px;
+  }
 }
 .welcome div h2 {
   max-width: 549px;
@@ -143,6 +159,14 @@ header nav ul li a span {
 .welcome div h2 span {
   color: #499A18;
 }
+@media screen and (max-width: 768px) {
+  .welcome div h2 {
+    font-size: 35px;
+    line-height: 50px;
+    max-width: 341px;
+    margin: 0 0 30px 0;
+  }
+}
 .welcome div p {
   max-width: 525.44px;
   height: 105px;
@@ -150,6 +174,14 @@ header nav ul li a span {
   line-height: 37px;
   color: #636060;
   margin: 0 0 48px 0;
+}
+@media screen and (max-width: 768px) {
+  .welcome div p {
+    max-width: 341px;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 30px 0;
+  }
 }
 .welcome div button {
   width: 158px;
@@ -180,6 +212,19 @@ header nav ul li a span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .about {
+    height: 783px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px 50px 95px 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .about div {
   max-width: 605px;
   height: 350px;
@@ -198,6 +243,16 @@ header nav ul li a span {
 .about div h2 span {
   color: #E06733;
 }
+@media screen and (max-width: 768px) {
+  .about div h2 {
+    max-width: 423px;
+    height: 102px;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 .about div p {
   max-width: 605px;
   height: 208px;
@@ -209,15 +264,17 @@ header nav ul li a span {
   max-width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .about img {
+    max-width: 250px;
+    height: auto;
+  }
+}
 
 .service {
   height: 1300px;
   padding: 40px 109px 121px 109px;
   background-color: #EDF2EC;
-
-
-  box-shadow: 0 0 0 100vmax #edf2ec;
-  clip-path: inset(0 -100vmax);
 }
 .service .service_content {
   display: -webkit-box;
@@ -347,9 +404,9 @@ header nav ul li a span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* -webkit-box-align: end;
-      -ms-flex-align: end; */
-          align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 .prices_acord .price_second_part h2 {
   max-width: 545px;
@@ -501,10 +558,6 @@ header nav ul li a span {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 60px 109px 0 109px;
-
-  
-  box-shadow: 0 0 0 100vmax #edf2ec;
-  clip-path: inset(0 -100vmax);
 }
 .contacts img {
   width: 400px;
