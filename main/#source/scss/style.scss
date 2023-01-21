@@ -33,11 +33,16 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
+
 header{
     background: $backColor1;
     padding-top: 36px;
     height: 134px;
     align-items: center;
+    box-shadow: 0 0 0 100vmax #EDF2EC; clip-path: inset(0 -100vmax);
+    @media screen and (max-width: 768px){
+        padding-top: 30px;
+     }
     nav{
         display: flex;
         align-items: center;
@@ -45,6 +50,9 @@ header{
         max-width: 1222px;
         height: 50px;
         margin: 0 auto;
+        @media screen and (max-width: 768px){
+           padding: 0 50px;
+        }
         h1{
             width: 79.17px;
             height: 21.04px;
@@ -94,17 +102,19 @@ header{
     height: 532px; 
     justify-content: space-between;
     padding: 62px 109px 62px 109px;
+    box-shadow: 0 0 0 100vmax #EDF2EC; clip-path: inset(0 -100vmax);
     @media screen and (max-width: 768px){
-        height: 420px;
-        padding: 40px 50px 70px 50px;
+        height: 404px;
+        padding: 0px 50px 0px 50px;
         flex-direction: row-reverse;
     }
         img{
             max-width: 100%;
             height: auto;
             @media screen and (max-width: 768px){
-                height: 280px;
-                width: 254px;
+                height: 362px;
+    width: 282px;
+    padding-bottom: 103px;
             }
         } 
         div{
@@ -112,7 +122,7 @@ header{
             height: 340px;
             @media screen and (max-width: 768px) {
                 max-width: 346px;
-                height: 310px
+                height: 360px
             }
             h2{
                 max-width: 549px;
@@ -129,7 +139,7 @@ header{
                 @media screen and (max-width: 768px) {
                     font-size: 35px;
                     line-height: 50px;
-                    max-width: 341px;
+                    max-width: 350px;
                     margin: 0 0 30px 0;
                 }
             }
@@ -174,12 +184,16 @@ header{
     @media screen and (max-width: 768px) {
         height: 783px;   
         flex-direction: column;
-        padding: 70px 50px  95px 50px;
+        padding: 37px 50px  95px 50px;
         justify-content: center;
     }
     div{
         max-width: 605px;
         height: 350px;
+        @media screen and (max-width: 768px) {
+            max-width: 666px;
+            height: 425px;
+        }
         h2{
             max-width: 462px;
             height: auto;
@@ -229,10 +243,10 @@ header{
     height: 1300px;
     padding: 40px 109px 121px 109px;
     background-color: $backColor1;
-
+    box-shadow: 0 0 0 100vmax #EDF2EC; clip-path: inset(0 -100vmax);
     @media screen and (max-width: 768px) {
         height: 1780px;
-        padding: 40px 50px 70px 50px;
+        padding: 60px 50px 70px 50px;
 
     }
     .service_content{
@@ -257,7 +271,7 @@ header{
             word-spacing: -5px;
 
             @media screen and (max-width: 768px){
-            font-size: 35px;
+            font-size: 34px;
             line-height: 46px;
             margin-bottom: 40px;
             }
@@ -268,6 +282,9 @@ header{
             width: 559px;
             height: 50px;
             padding-top: 7px;
+            @media screen and (max-width: 768px){
+                padding-top: 0px;
+                }
             button{
                 width: 161px;
                 height: 50px;
@@ -299,8 +316,8 @@ header{
     row-gap: 88px;
     @media screen and (max-width: 768px){
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 38px;
-        
+        row-gap: 53px;
+        margin-top: 37px;
     }
     div{
         display: flex;
@@ -322,6 +339,7 @@ header{
         p{
             color: #717171;
             @media screen and (max-width: 768px){
+                max-width: 203px;
                 text-align: center;
             }
         }
@@ -334,7 +352,7 @@ header{
     padding: 40px 109px 115px 109px;
     @media screen and (max-width: 768px){
         height: 585px;
-
+        padding: 40px 50px 115px 50px;
     }
 }
 .prices_acord{
@@ -355,6 +373,7 @@ header{
             @media screen and (max-width: 768px){
                 font-size: 35px;
                 line-height: 42px;
+                padding-left: 13px;
                 
             }
         }
@@ -362,6 +381,8 @@ header{
             width: 332px;
             height: 282px;
             padding: 34px 41px 34px 41px;
+            border: 1px solid #E3E1D5;
+border-radius: 20px;
             div{
                 
                 margin-bottom: 32px;
@@ -373,6 +394,10 @@ header{
         display: flex;
         flex-direction: column;
         align-items: end;
+        @media screen and (max-width: 768px){
+            padding-top: 100px;
+            
+        }
         h2{
             max-width: 545px;
             height: 103px;
@@ -390,6 +415,9 @@ header{
             @media screen and (max-width: 768px){
                 font-size: 25px;
                 line-height: 35px;
+                height: auto;
+                word-spacing: 0px;
+                margin-bottom: 25px;
                 
             }
         }
@@ -515,18 +543,23 @@ header{
     height: 550px;
     background-color: $backColor1;
     justify-content: center;
-    
+    box-shadow: 0 0 0 100vmax #EDF2EC; clip-path: inset(0 -100vmax);
     padding: 60px 109px 0 109px;
     @media screen and (max-width: 768px){
         flex-direction:column-reverse;
         align-items: center;
+        justify-content: space-between;
+        height: 740px;
+        padding: 40px 109px 0 109px;
     }
     img{
         width: 400px;
         height: 488px;
         @media screen and (max-width: 768px){
-            width: 200px;
+            width: 220px;
             height: auto;
+            margin: 0 auto;
+            padding-left: 20px;
         }
     }
     h2{
@@ -536,6 +569,9 @@ header{
         font-weight: 700;
         font-size: 40px;
         margin: 0 65px 0 112px;
+        @media screen and (max-width: 768px){
+            margin: 0 auto;
+        }
         
     }
     button{
@@ -553,7 +589,10 @@ header{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: 5px 35px 5px 20px;
         margin-top: 88px;
-
+        @media screen and (max-width: 768px){
+            margin-top: -151px;
+        }
+        
     }
 }
 footer{
@@ -567,12 +606,17 @@ footer{
         max-width: 1222px;
         margin: 0 auto;
         @media screen and (max-width: 768px){
-            height: 181px;
+            height: 170px;
             flex-direction: column;
+            padding-top: 15px;
         }
         .git_footer{
             word-spacing: 15px;
             transition: 0.3s;
+            @media screen and (max-width: 768px){
+                height: 40px;
+                word-spacing: 18px;
+            }
                 &:hover{
                     scale: 1.1;
                     transition: 0.3s;
