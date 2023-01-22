@@ -20,6 +20,7 @@ document.querySelectorAll('.accordion').forEach((el) => {
     } else {
       document.querySelectorAll('.panel').forEach((el) => el.style.maxHeight = null)
       content.style.maxHeight = 108 + "px";
+      content.style.maxWidth = 180 + "px";
     }
   })
 })
