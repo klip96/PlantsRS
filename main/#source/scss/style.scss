@@ -43,6 +43,10 @@ header{
     @media screen and (max-width: 768px){
         padding-top: 30px;
      }
+     @media screen and (max-width: 380px){
+        padding-top: 20px;
+        height: 96px;
+     }
     nav{
         display: flex;
         align-items: center;
@@ -53,6 +57,9 @@ header{
         @media screen and (max-width: 768px){
            padding: 0 50px;
         }
+        @media screen and (max-width: 380px){
+            padding: 0 25px;
+         }
         h1{
             width: 79.17px;
             height: 21.04px;
@@ -75,6 +82,9 @@ header{
             list-style-type: none;
             gap: 44px;
            padding-top: 10px;
+           @media screen and (max-width: 380px){
+            display: none;
+         }
             li{
                 a{
                     color: #010201;
@@ -108,13 +118,20 @@ header{
         padding: 0px 50px 0px 50px;
         flex-direction: row-reverse;
     }
+    @media screen and (max-width: 380px){
+        height: 300px;
+        padding: 24px 25px
+     }
         img{
-            max-width: 100%;
+            max-width: 37%;
             height: auto;
             @media screen and (max-width: 768px){
                 height: 362px;
-    width: 282px;
-    padding-bottom: 103px;
+                width: 282px;
+                padding-bottom: 103px;
+            }
+            @media screen and (max-width: 380px){
+                display: none;
             }
         } 
         div{
@@ -124,6 +141,9 @@ header{
                 max-width: 346px;
                 height: 360px
             }
+            @media screen and (max-width: 380px){
+                height: 252px
+             }
             h2{
                 max-width: 549px;
                 height: auto;
@@ -142,6 +162,13 @@ header{
                     max-width: 350px;
                     margin: 0 0 30px 0;
                 }
+                @media screen and (max-width: 380px){
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 35px;
+                    margin: 0 0 25px 0;
+                    word-spacing: 0px;
+                 }
             }
             p{
                 max-width: 525.44px;
@@ -156,6 +183,9 @@ header{
                     line-height: 25px;
                     margin: 0 0 30px 0;
                 }
+                @media screen and (max-width: 380px){
+                    margin: 0 0 18px 0;
+                 }
             }
             button{
                 width: 158px;
@@ -171,6 +201,13 @@ header{
                     background-color: $orangeColor;
                     color: white;
                 }
+                @media screen and (max-width: 380px){
+                    width: 100px;
+                    height: 34px;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 20px; 
+                 }
             }
            
         }
@@ -187,12 +224,19 @@ header{
         padding: 37px 50px  95px 50px;
         justify-content: center;
     }
+    @media screen and (max-width: 380px){
+        height: 516px;
+        padding: 30px 25px;
+     }
     div{
         max-width: 605px;
         height: 350px;
         @media screen and (max-width: 768px) {
             max-width: 666px;
             height: 425px;
+        }
+        @media screen and (max-width: 380px) {
+            height: 300px
         }
         h2{
             max-width: 462px;
@@ -215,6 +259,12 @@ header{
                 text-align: center;
                 margin: 0 auto;
             }
+            @media screen and (max-width: 380px){
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 33px;
+                height: auto;
+             }
         }
         p{
             max-width: 605px;
@@ -227,16 +277,25 @@ header{
                 max-width: 668px;
                 // word-spacing: 1px;
             }
+            @media screen and (max-width: 380px){
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                margin: 12px 0 0 0;
+             }
         }
     }
     img{
-        max-width: 100%;
+        max-width: 37%;
         height: auto;
 
         @media screen and (max-width: 768px) {
             max-width: 250px;
             height: auto;
         }
+        @media screen and (max-width: 380px){
+            max-width: 150px;
+         }
     }
 }  
 .service{
@@ -249,12 +308,18 @@ header{
         padding: 60px 50px 70px 50px;
 
     }
+    @media screen and (max-width: 380px){
+        height: 3150px;
+        padding: 30px 50px 27px 25px;
+     }
     .service_content{
         display: flex;
         max-width: 1007px;
         height: 94px;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        
 
         @media screen and (max-width: 768px){
             flex-direction: column;
@@ -275,6 +340,14 @@ header{
             line-height: 46px;
             margin-bottom: 40px;
             }
+            @media screen and (max-width: 380px){
+                width: 187px;
+                height: 69px;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 33px;
+                margin-bottom: 37px;
+            }
         }
         div{
             display: flex;
@@ -285,6 +358,16 @@ header{
             @media screen and (max-width: 768px){
                 padding-top: 0px;
                 }
+            @media screen and (max-width: 630px){
+                    flex-wrap: wrap;
+                    width: 252px;
+                    height: 79px;
+            }
+            @media screen and (max-width: 380px){
+                    flex-wrap: wrap;
+                    width: 252px;
+                    height: 79px;
+            }
             button{
                 width: 161px;
                 height: 50px;
@@ -304,6 +387,17 @@ header{
                     background-color: $orangeColor;
                     color: white;
                 }
+                @media screen and (max-width: 630px){
+                    width: 121px;
+                    
+                }
+                @media screen and (max-width: 380px){
+                    width: 121px;
+                    height: 35px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
             }
         }
     }
@@ -319,6 +413,11 @@ header{
         row-gap: 53px;
         margin-top: 37px;
     }
+    @media screen and (max-width: 380px){
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 25px;
+        row-gap: 49px;
+    }
     div{
         display: flex;
         flex-wrap: wrap;
@@ -328,10 +427,10 @@ header{
         border-radius: 20px 20px 20px 20px;
         overflow: hidden;
         justify-content: center;
-        @media screen {
-            max-width: 281px;
-            max-height: 450px;
-        }
+        // @media screen {
+        //     max-width: 281px;
+        //     max-height: 450px;
+        // }
         h3{
             color: #E06733;
             margin: 10px 0 10px 0;
@@ -354,14 +453,30 @@ header{
         height: 585px;
         padding: 40px 50px 115px 50px;
     }
+    @media screen and (max-width: 380px){
+        height: 512px;
+        padding: 0;
+    }
 }
 .prices_acord{
     display: flex;
     // flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 600px){
+        flex-wrap: wrap;
+
+    }
+    @media screen and (max-width: 380px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .price_first_part{
         width: 332px;
         height: 391px;
+        @media screen and (max-width: 380px){
+            width: 225px;
+            height: auto;
+        }
         h2{
             font-family: 'Inter';
             font-style: normal;
@@ -369,12 +484,22 @@ header{
             font-size: 40px;
             line-height: 48px;
             color: #000000;
-            margin-bottom: 60px;
+            margin-bottom: 35px;
             @media screen and (max-width: 768px){
                 font-size: 35px;
                 line-height: 42px;
                 padding-left: 13px;
+                margin-bottom: 55px;
                 
+            }
+            @media screen and (max-width: 380px){
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+                padding-left: 0px;
+                padding-top: 25px;
+                margin-bottom: 35px;
             }
         }
         .prce_acord_box{
@@ -382,11 +507,22 @@ header{
             height: 282px;
             padding: 34px 41px 34px 41px;
             border: 1px solid #E3E1D5;
-border-radius: 20px;
+            border-radius: 20px;
             div{
                 
                 margin-bottom: 32px;
+            @media screen and (max-width: 380px){
+                margin-bottom: 15px;
+            }
                 
+            }
+            @media screen and (max-width: 410px){
+                width: 300px;
+            }
+            @media screen and (max-width: 380px){
+                width: 224px;
+                height: 235px;
+                padding: 29px 22px
             }
         }
     }
@@ -397,6 +533,15 @@ border-radius: 20px;
         @media screen and (max-width: 768px){
             padding-top: 100px;
             
+        }
+        @media screen and (max-width: 380px){
+            width: 230px;
+            height: 126px;
+            padding-top: 21px;
+            align-items: center;
+            height: auto;
+            
+           
         }
         h2{
             max-width: 545px;
@@ -420,6 +565,12 @@ border-radius: 20px;
                 margin-bottom: 25px;
                 
             }
+            @media screen and (max-width: 380px){
+                font-size: 20px;
+                line-height: 35px;
+                text-align: center;
+                margin-bottom: 22px;
+            }
         }
         button{
             width: 162px;
@@ -438,10 +589,20 @@ border-radius: 20px;
                     background-color: $orangeColor;
                     color: white;
                 }
+                
+                @media screen and (max-width: 380px){
+                    width: 121px;
+                    height: 35px;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
         }
         img{
             width: 152px;
             height: 175px;
+            @media screen and (max-width: 380px){
+                display: none;
+            }
         }
     }
 }
@@ -479,6 +640,14 @@ border-radius: 20px;
         
         
         
+    }
+    @media screen and (max-width: 380px){
+        width: 180px;
+        height: 50px; 
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 16px 40px 16px 30px;
     }
 }
 
@@ -552,6 +721,11 @@ border-radius: 20px;
         height: 740px;
         padding: 40px 109px 0 109px;
     }
+    @media screen and (max-width: 380px){
+        height: 445px;
+        padding: 25px 42px 0 42px;
+
+    }
     img{
         width: 400px;
         height: 488px;
@@ -560,6 +734,10 @@ border-radius: 20px;
             height: auto;
             margin: 0 auto;
             padding-left: 20px;
+        }
+        @media screen and (max-width: 380px){
+            width: 100px;
+            padding-left: 0px;
         }
     }
     h2{
@@ -571,6 +749,10 @@ border-radius: 20px;
         margin: 0 65px 0 112px;
         @media screen and (max-width: 768px){
             margin: 0 auto;
+        }
+        @media screen and (max-width: 380px){
+            font-size: 25px;
+            line-height: 33px;
         }
         
     }
@@ -591,6 +773,13 @@ border-radius: 20px;
         margin-top: 88px;
         @media screen and (max-width: 768px){
             margin-top: -151px;
+            width: 82%;
+
+        }
+        @media screen and (max-width: 380px){
+            margin-top: -48px;
+            width: 300px;
+
         }
         
     }
@@ -609,6 +798,10 @@ footer{
             height: 170px;
             flex-direction: column;
             padding-top: 15px;
+        }
+        @media screen and (max-width: 380px){
+            height: 146px;
+            padding-top: 7px;
         }
         .git_footer{
             word-spacing: 15px;
@@ -652,6 +845,59 @@ footer{
                     transition: 0.3s;
                 }
             }
-                
+            @media screen and (max-width: 380px){
+                margin-top: 0px;  
+            }    
         }
     }
+
+
+    .menu_burger_header{
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 38px;
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+        @media screen and (max-width: 380px){
+            display: block;
+         }
+        span{
+            background: #717171;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 16px;
+            transition: all 0.3s ease 0s;
+          }
+        .span1{
+            background: #717171;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 24px;
+            transition: all 0.3s ease 0s;
+          }
+      }
+      .menu_burger_header:before,
+      .menu_burger_header:after{
+        content: '';
+        background: #717171;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+      }
+      .menu_burger_header:before{
+        top: 8px;
+      }
+      .menu_burger_header:after{
+        top: 32px;
+      }
+      .menu_burger_header.active{
+        transform: rotate(90deg);
+        right: 0;
+      }
