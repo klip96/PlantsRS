@@ -25,14 +25,13 @@ document.querySelectorAll('.accordion').forEach((el) => {
   })
 });
 
-var burger = document.getElementsByClassName("menu_burger_header");
-var headerList = document.getElementsByClassName("header-list");
-for (i = 0; i < acc.length; i++) {
-  burger[i].addEventListener("click", function() {
-    burger.classList.toggle("active")
-    headerList.classList.toggle("active")
-  });
-}
+
+let burgerButt = document.querySelector('.menu_burger_header');
+let burgerList = document.querySelector('.header-list');
+burgerButt.addEventListener('click', function(){
+	burgerList.classList.toggle('active');
+})
+
 
 // document.querySelectorAll(function)
 // $(document).ready(function() {
