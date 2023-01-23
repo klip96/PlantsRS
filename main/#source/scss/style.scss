@@ -83,7 +83,14 @@ header{
             gap: 44px;
            padding-top: 10px;
            @media screen and (max-width: 380px){
-            display: none;
+            display: block;
+            position: fixed;
+            top: -200%;
+            width: 100%;
+            height: 250px;
+            transition: all 0.3s ease 0s;
+            background-color: #292929;
+            
          }
             li{
                 a{
@@ -104,6 +111,13 @@ header{
         }
     }
 }
+.header_list.open{
+    top: 0px;
+    left: 0;
+    margin-top: 0px;
+    
+    text-align: center;
+  }
 .welcome{
     background: $backColor1;
     display: flex;
@@ -897,7 +911,7 @@ footer{
       .menu_burger_header:after{
         top: 32px;
       }
-      .menu_burger_header.active{
+      .menu_burger_header.open{
         transform: rotate(90deg);
         right: 0;
       }

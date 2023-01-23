@@ -26,11 +26,12 @@ document.querySelectorAll('.accordion').forEach((el) => {
 });
 
 
-let burgerButt = document.querySelector('.menu_burger_header');
-let burgerList = document.querySelector('.header-list');
+const burgerButt = document.querySelector('.menu_burger_header');
+const burger = document.querySelector('.header_list');
 burgerButt.addEventListener('click', function(){
-	burgerList.classList.toggle('active');
-})
+	burger.classList.toggle('open')
+  burgerButt.classList.toggle('open')
+});
 
 
 // document.querySelectorAll(function)
