@@ -1015,13 +1015,28 @@ footer ul li:hover {
   top: 8px;
 }
 
+.menu_burger_header.open:before {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 2px;
+}
+
 .menu_burger_header:after {
   top: 32px;
+}
+.menu_burger_header.open:after {
+  transform: rotate(-45deg);
+  top: 0px;
+  left: 2px;
 }
 
 .menu_burger_header.open {
   transform: rotate(90deg);
   right: 0;
+}
+
+.menu_burger_header.open span {
+  display: none;
 }
 .pop_burger{
   position: fixed;
