@@ -27,26 +27,43 @@ document.querySelectorAll('.accordion').forEach((el) => {
 
 
 const burgerButt = document.querySelector('.menu_burger_header');
-const burger = document.querySelector('.header_list');
+const burger = document.querySelector('.pop_burger');
+const body = document.body;
+const list1 = document.querySelector('.test1');
+const list2 = document.querySelector('.test2');
+const list3 = document.querySelector('.test3');
+const list4 = document.querySelector('.test4');
+const list5 = document.querySelector('.test5');
 burgerButt.addEventListener('click', function(){
 	burger.classList.toggle('open')
   burgerButt.classList.toggle('open')
+  body.classList.toggle("noscroll");
+});
+list1.addEventListener('click', function(){
+	burger.classList.toggle('open')
+  burgerButt.classList.toggle('open')
+  body.classList.toggle("noscroll");
+});
+list2.addEventListener('click', function(){
+	burger.classList.toggle('open')
+  burgerButt.classList.toggle('open')
+  body.classList.toggle("noscroll");
+});
+list3.addEventListener('click', function(){
+	burger.classList.toggle('open')
+  burgerButt.classList.toggle('open')
+  body.classList.toggle("noscroll");
+});
+list4.addEventListener('click', function(){
+	burger.classList.toggle('open')
+  burgerButt.classList.toggle('open')
+  body.classList.toggle("noscroll");
+});
+list5.addEventListener('click', function(){
+	burger.classList.toggle('open')
+  burgerButt.classList.toggle('open')
+  body.classList.toggle("noscroll");
 });
 
-
-// document.querySelectorAll(function)
-// $(document).ready(function() {
-// 	$('.menu_burger_header').click(function(event){
-//                 $('.menu_burger_header, .header_list').toggleClass('active');
-// 				$('body').toggleClass('lock');
-// 	});
-// 	$('.header_item, header_item_test').click(function(event) {
-//         $('.menu-burger_header, .header_list').removeClass('active');
-//         $('body').removeClass('lock');
-//   $('.katrine_button').click(function(event){
-//               $('.our__friends__modal__block').toggleClass('active');
-//         $('body').toggleClass('lock');
-// 	});
-// });
 
 
