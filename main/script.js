@@ -64,6 +64,10 @@ list5.addEventListener('click', function(){
   burgerButt.classList.toggle('open')
   body.classList.toggle("noscroll");
 });
-
+burger.addEventListener('click', function(){
+	burger.classList.remove('open')
+  burgerButt.classList.remove('open')
+  body.classList.remove("noscroll");
+});
 
 
