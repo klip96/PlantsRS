@@ -980,6 +980,7 @@ footer ul li:hover {
 @media screen and (max-width: 380px) {
   .menu_burger_header {
     display: block;
+    transition: 0.5s;
   }
 }
 .menu_burger_header span {
@@ -1013,30 +1014,36 @@ footer ul li:hover {
 
 .menu_burger_header:before {
   top: 8px;
+  transition: 0.5s;
 }
 
 .menu_burger_header.open:before {
   transform: rotate(45deg);
   top: 0px;
   left: 2px;
+  transition: 0.5s;
 }
 
 .menu_burger_header:after {
   top: 32px;
+  transition: 0.5s;
 }
 .menu_burger_header.open:after {
   transform: rotate(-45deg);
   top: 0px;
   left: 2px;
+  transition: 0.5s;
 }
 
 .menu_burger_header.open {
   transform: rotate(90deg);
   right: 0;
+  transition: 0.5s;
 }
 
 .menu_burger_header.open span {
   display: none;
+  transition: 0.5s;
 }
 .pop_burger{
   position: fixed;
@@ -1047,7 +1054,7 @@ footer ul li:hover {
   background: #EDF2EC;
 
   z-index: 2;
-  transition: 0.5s;
+  transition: 1s;
 }
 @media screen and (max-width: 380px) {
   .pop_burger.open{
