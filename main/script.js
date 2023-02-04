@@ -1,29 +1,23 @@
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active").forEach((el) => acc.classList.remove("active"))
-    
-    
+let acc = document.querySelectorAll('.accordion');
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    for (let index = 0; index < acc.length; index++) {
+      const el = acc[index];
+      if (this !== el) {
+        el.classList.remove('active');
+        el.nextElementSibling.style.maxHeight = null;
+      }
+    }
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = 108 + "px";
+    } 
   });
 }
-
-document.querySelectorAll('.accordion').forEach((el) => {
-  el.addEventListener('click', () => {
-    let content = el.nextElementSibling;
-
-    if (content.style.maxHeight) {
-      
-      document.querySelectorAll('.panel').forEach((el) => el.style.maxHeight = null)
-    } else {
-      document.querySelectorAll('.panel').forEach((el) => el.style.maxHeight = null)
-      content.style.maxHeight = 108 + "px";
-      content.style.maxWidth = 180 + "px";
-    }
-  })
-});
 
 
 const burgerButt = document.querySelector('.menu_burger_header');
