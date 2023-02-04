@@ -451,7 +451,6 @@ header nav ul li a span {
   height: 50px;
   border: 1px solid #E06733;
   border-radius: 5px;
-  color: #E06733;
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
@@ -459,10 +458,6 @@ header nav ul li a span {
   line-height: 26px;
 }
 .service .service_content div button:hover {
-  background-color: #E06733;
-  color: white;
-}
-.service .service_content div button:first-child {
   background-color: #E06733;
   color: white;
 }
@@ -1099,4 +1094,10 @@ footer ul li:hover {
 
 body.noscroll {
   overflow: hidden;
+}
+
+.garden_active {
+  background-color: #E06733;
+  color: #ffffff;
+  
 }

@@ -8,6 +8,7 @@ $backColor1: #EDF2EC;
 $orangeColor: #E06733;
 $greenColor:#499A18;
 
+
 @font-face {
     font-family: Inter;
     src: url(fonts/Intert.ttf);
@@ -389,7 +390,7 @@ header{
                 height: 50px;
                 border: 1px solid $orangeColor;
                 border-radius: 5px;
-                color: $orangeColor;
+                // color: $orangeColor;
                 font-family: 'Inika';
                 font-style: normal;
                 font-weight: 400;
@@ -399,10 +400,10 @@ header{
                     background-color: $orangeColor;
                     color: white;
                 }
-                &:first-child{
-                    background-color: $orangeColor;
-                    color: white;
-                }
+                // &:first-child{
+                //     background-color: $orangeColor;
+                //     color: white;
+                // }
                 @media screen and (max-width: 630px){
                     width: 121px;
                     
@@ -986,3 +987,14 @@ footer{
       body.noscroll {
         overflow: hidden;
       }
+// #garden_but{
+//     color: #FFFFFF;
+// }
+// #lawn_but{
+//     color: #E06733;
+// }
+.garden_active{
+    background-color: #E06733;
+    color: #ffffff;
+    filter: blur(3px);
+}
