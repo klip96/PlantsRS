@@ -20,9 +20,6 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 
-
-
-
 const gardenButt = document.getElementById('garden_but');
 const gardenButt2 = document.getElementById('lawn_but');
 const gardenButt3 = document.getElementById('planting_but');
@@ -112,6 +109,8 @@ burger.addEventListener('click', function(){
   body.classList.remove("noscroll");
 });
 
+
+
 const sityTest1 = document.getElementById('citySelect1');
 const sityTest2 = document.getElementById('citySelect2');
 const sityTest3 = document.getElementById('citySelect3');
@@ -147,33 +146,29 @@ sityTest4.addEventListener('click', function(){
 
 
 
+
 let select = function() {
-  let selectHeader = document.querySelectorAll('.select_header');
-  let selectItem = document.querySelectorAll('.select_item')
-
-  selectHeader.forEach(item => {
-    item.addEventListener('click', selectToggle)
+  let headerSelect = document.querySelectorAll('.select_header');
+  let itemSelect = document.querySelectorAll('.select_item')
+  headerSelect.forEach(item => {
+    item.addEventListener('click', toggelpick)
   });
-
-  selectItem.forEach(item => {
-    item.addEventListener('click', selectChoose)
+  itemSelect.forEach(item => {
+    item.addEventListener('click', selectReset)
   })
-
-  function selectToggle() {
-    this.parentElement.classList.toggle('is-active');
+  function toggelpick() {
+    this.parentElement.classList.toggle('is_active');
     sityMenu1.style.display = "";
     sityMenu2.style.display = "";
     sityMenu3.style.display = "";
     sityMenu4.style.display = "";
   }
-
-  function selectChoose() {
+  function selectReset() {
     let text = this.innerText,
     select = this.closest('.select'),
     currentText = select.querySelector('.select_current');
-        currentText.innerText = text;
-    select.classList.remove('is-active');
-    
+    currentText.innerText = text;
+    select.classList.remove('is_active'); 
 }
 };
 

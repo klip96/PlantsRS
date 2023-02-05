@@ -1128,7 +1128,7 @@ select {
   }
 }
 
-.select.is-active .select_body {
+.select.is_active .select_body {
   display: block;
 }
 
