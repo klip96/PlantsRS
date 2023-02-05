@@ -112,4 +112,71 @@ burger.addEventListener('click', function(){
   body.classList.remove("noscroll");
 });
 
+const sityTest1 = document.getElementById('citySelect1');
+const sityTest2 = document.getElementById('citySelect2');
+const sityTest3 = document.getElementById('citySelect3');
+const sityTest4 = document.getElementById('citySelect4');
+const sityMenu1 = document.getElementById('city1');
+const sityMenu2 = document.getElementById('city2');
+const sityMenu3 = document.getElementById('city3');
+const sityMenu4 = document.getElementById('city4');
+sityTest1.addEventListener('click', function(){
+	sityMenu1.style.display = "";
+  sityMenu2.style.display = "flex";
+  sityMenu3.style.display = "";
+  sityMenu4.style.display = "";
+});
+sityTest2.addEventListener('click', function(){
+	sityMenu1.style.display = "";
+  sityMenu2.style.display = "";
+  sityMenu3.style.display = "";
+  sityMenu4.style.display = "flex";
+});
+sityTest3.addEventListener('click', function(){
+	sityMenu1.style.display = "flex";
+  sityMenu2.style.display = "";
+  sityMenu3.style.display = "";
+  sityMenu4.style.display = "";
+});
+sityTest4.addEventListener('click', function(){
+	sityMenu1.style.display = "";
+  sityMenu2.style.display = "";
+  sityMenu3.style.display = "flex";
+  sityMenu4.style.display = "";
+});
+
+
+
+let select = function() {
+  let selectHeader = document.querySelectorAll('.select_header');
+  let selectItem = document.querySelectorAll('.select_item')
+
+  selectHeader.forEach(item => {
+    item.addEventListener('click', selectToggle)
+  });
+
+  selectItem.forEach(item => {
+    item.addEventListener('click', selectChoose)
+  })
+
+  function selectToggle() {
+    this.parentElement.classList.toggle('is-active');
+    sityMenu1.style.display = "";
+    sityMenu2.style.display = "";
+    sityMenu3.style.display = "";
+    sityMenu4.style.display = "";
+  }
+
+  function selectChoose() {
+    let text = this.innerText,
+    select = this.closest('.select'),
+    currentText = select.querySelector('.select_current');
+        currentText.innerText = text;
+    select.classList.remove('is-active');
+    
+}
+};
+
+select();
+
 
