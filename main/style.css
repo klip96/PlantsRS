@@ -1217,6 +1217,7 @@ select {
   text-align: center;
   border: 1px solid #E06733;
   border-radius: 5px;
+  color: #717171;
 }
 .sity_sect.is-action {
   display: flex;
