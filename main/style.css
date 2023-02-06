@@ -1140,9 +1140,12 @@ select {
 }
 
 .select_current {
-  font-size: 18px;
-  line-height: 24px;
-  padding: 8px;
+  padding: 4px 0px 4px 10px;
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
 }
 
 .select_icon {
@@ -1180,13 +1183,15 @@ select {
   line-height: 40px;
   /* or 250% */
   letter-spacing: 0.05em;
-  width: 380px;
+  /* width: 380px; */
   height: 35px;
   cursor: pointer;
+  border-bottom: 1px #d9d9d9 solid;
   color: #499A18;
 }
 .select_item:hover {
   color: #717171;
+  border-bottom: 1px #000000 solid;
 }
 
 .sity_sect {
